@@ -18,6 +18,8 @@ const generateMessage = (type, name = "") => {
     unauthorized: "Access Denied. No token provided.",
     invalidToken : "Invalid token provided.",
     accessDenied: "Access Denied. You do not have permission to perform this action.",
+    requiredPassword : "Password is atleast 6 of charater.",
+    passwordMismatch : "Password and confirm password do not match.",
   };
 
   return messages[type] || `Invalid operation type for ${name}.`;

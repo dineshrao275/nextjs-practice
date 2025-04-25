@@ -1,0 +1,8 @@
+{"error":"Cast to ObjectId failed for value \"680a91538c6899a5551r15f1\" (type string) at path \"_id\" for model \"User\"","level":"error","message":"Error retrieving user","method":"GET","url":"/api/user/680a91538c6899a5551r15f1"}
+{"error":"Cast to ObjectId failed for value \"680a91538c6897a5551e15f\" (type string) at path \"_id\" for model \"User\"","level":"error","message":"Error retrieving user","method":"GET","url":"/api/user/680a91538c6897a5551e15f"}
+{"level":"error","message":"Error creating blog: Blog validation failed: author: Path `author` is required., content: Path `content` is required., slug: Path `slug` is required., title: Path `title` is required."}
+{"level":"error","message":"Error creating blog: Blog validation failed: author: Path `author` is required., content: Path `content` is required., slug: Path `slug` is required., title: Path `title` is required."}
+{"level":"error","message":"Error creating blog: Blog validation failed: slug: Path `slug` is required."}
+{"level":"error","message":"Error creating blog: E11000 duplicate key error collection: blogs.blogs index: slug_1 dup key: { slug: \"this-is-my-first-blog-title\" }"}
+{"level":"error","message":"Error fetching blogs: Schema hasn't been registered for model \"profilePicture\".\nUse mongoose.model(name, schema)"}
+{"level":"error","message":"Error fetching blogs: dayjs(...).fromNow is not a function"}
