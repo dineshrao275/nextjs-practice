@@ -6,3 +6,4 @@
 {"level":"error","message":"Error creating blog: E11000 duplicate key error collection: blogs.blogs index: slug_1 dup key: { slug: \"this-is-my-first-blog-title\" }"}
 {"level":"error","message":"Error fetching blogs: Schema hasn't been registered for model \"profilePicture\".\nUse mongoose.model(name, schema)"}
 {"level":"error","message":"Error fetching blogs: dayjs(...).fromNow is not a function"}
+{"error":"E11000 duplicate key error collection: blogs.categories index: name_1 dup key: { name: \"Software Devellopment\" }","level":"error","message":"Error creating category","method":"POST","url":"/api/category"}

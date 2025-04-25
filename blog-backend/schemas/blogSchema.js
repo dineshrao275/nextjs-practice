@@ -23,6 +23,11 @@ const blogSchema = new mongoose.Schema({
     ref: "User",
     required: true,
   },
+  author: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Catagory",
+    required: true,
+  },
   tags: {
     type: [String],
     default: [],

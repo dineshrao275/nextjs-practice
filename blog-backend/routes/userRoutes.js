@@ -6,14 +6,14 @@ import {
   blockUser,
   createUser,
 } from "../controllers/userController.js";
-import { isAdmin } from "../middlewares/authMiddleware.js";
+import authenticate, { isAdmin } from "../middlewares/authMiddleware.js";
 
 const userRoutes = express.Router();
 
-userRoutes.get("/create", [isAdmin], createUser);
-userRoutes.get("/", [isAdmin], getAllUsers);
-userRoutes.get("/:id", getUserById);
-userRoutes.delete("/:id", [isAdmin], deleteUser);
-userRoutes.post("/:id", [isAdmin], blockUser);
+userRoutes.get("/create", [authenticate, isAdmin], createUser);
+userRoutes.get("/", [authenticate, isAdmin], getAllUsers);
+userRoutes.get("/:id", [authenticate], getUserById);
+userRoutes.delete("/:id", [authenticate, isAdmin], deleteUser);
+userRoutes.post("/:id", [authenticate, isAdmin], blockUser);
 
 export default userRoutes;

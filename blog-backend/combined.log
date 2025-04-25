@@ -8,3 +8,10 @@
 {"level":"info","message":"Blog created successfully"}
 {"level":"info","message":"Blog deleted successfully with ID: 680bcbf2f11587bc00dc0a1d"}
 {"level":"warn","message":"Blog not found with ID: 680bcbf2f11587bc00dc0a1d"}
+{"level":"info","message":"Logging in user","method":"POST","url":"/api/auth/login"}
+{"level":"info","message":"User logged in successfully","method":"POST","url":"/api/auth/login","userId":"680a91538c6897a5551e15f1"}
+{"level":"info","message":"Checking admin access","method":"POST","url":"/api/category"}
+{"level":"info","message":"Creating new category","method":"POST","url":"/api/category"}
+{"level":"info","message":"Checking admin access","method":"POST","url":"/api/category"}
+{"level":"info","message":"Creating new category","method":"POST","url":"/api/category"}
+{"error":"E11000 duplicate key error collection: blogs.categories index: name_1 dup key: { name: \"Software Devellopment\" }","level":"error","message":"Error creating category","method":"POST","url":"/api/category"}
